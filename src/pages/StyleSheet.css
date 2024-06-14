@@ -22,7 +22,7 @@
 }
 
 .navlist-dropDown {
-  background-color: #ffffff;
+  background-color: #c5c2c2;
   /* background: linear-gradient(365deg, #272249 0%, #164486 50%, #000000 100%); */
   color: #0973f0;
   padding: 2.5rem 2rem;
@@ -708,7 +708,7 @@
 /* Edge In Action Section---- */
 
 .edgeInAction-parent {
-    background: linear-gradient(365deg, #272249 0%, #164486 50%, #000000 100%);
+  background: linear-gradient(365deg, #272249 0%, #164486 50%, #000000 100%);
   margin: 4rem 9rem;
   display: flex;
   flex-direction: column;
@@ -727,13 +727,13 @@
 }
 
 .edgeInAction-parent > p {
-    font-size: 16px;
+  font-size: 16px;
   line-height: 1.8rem;
   margin-bottom: 40px;
 }
 
 #edgeInAction-btn {
-    justify-content: center;
+  justify-content: center;
 }
 
 /* Media Queries---- */
@@ -811,9 +811,9 @@
     padding: 4rem 3rem;
   }
   .edgeInAction-parent {
-  margin: 4rem 3rem;
-  padding: 3rem 5rem 0 5rem;
-}
+    margin: 4rem 3rem;
+    padding: 3rem 5rem 0 5rem;
+  }
 }
 
 @media screen and (max-width: 910px) {
@@ -870,5 +870,114 @@
     display: grid;
     gap: 20px;
     margin: auto;
+  }
 }
+
+@media screen and (max-width: 750px) {
+  .Hero-section {
+    padding: 4rem 1rem;
+  }
+
+  .Hero-section > h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .Hero-section > p {
+    margin: 0 30px 5rem 30px;
+  }
+
+  .Hero-btn {
+    gap: 20px;
+  }
+
+  .Hero-btn > button {
+    font-size: 13px;
+  }
+
+  .Hero-info-parent {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 3rem 0.5rem;
+  }
+
+  .Hero-info > h3 {
+    font-weight: 600;
+  }
+
+  .Hero-info > p {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .trustedby-info {
+    padding: 4.6rem 2rem;
+  }
+
+  .why-edge-stack-parent {
+    padding: 4rem 1rem;
+  }
+
+  .why-edge-stack-parent > h2 {
+    font-size: 1.8rem;
+  }
+
+  .no-hidden-fee-parent {
+    padding: 4rem 1rem;
+  }
+
+  .no-hidden-fee-parent > h2 {
+    font-size: 1.8rem;
+  }
+
+  .sec-auth-parent {
+    padding: 4rem 1rem;
+  }
+
+  .sec-auth-info > h2 {
+    font-size: 1.8rem;
+  }
+
+  .edge-works-parent {
+    padding: 4rem 1rem;
+  }
+
+  .edge-works-parent > h2 {
+    font-size: 1.8rem;
+  }
+
+  .readyToLearn-parent {
+    padding: 4rem 1rem;
+  }
+  
+  .readyToLearn-parent > h2 {
+    font-size: 1.8rem;
+  }
+   
+  .readyToLearn-links {
+    gap: 50px;
+  }
+  
+  .readyToLearn-links > h2 {
+    font-size: 22px;
+  }
+
+  .intergration-parent {
+    padding: 4rem 1rem;
+  }
+  
+  .intergration-parent > h2 {
+    font-size: 1.8rem;
+  }
+
+  .edgeInAction-parent {
+    margin: 4rem 1rem;
+    padding: 3rem 5rem 3rem 5rem;
+    
+  }
+  
+  .edgeInAction-parent > h2 {
+    font-size: 1.8rem;
+  }
+
+  
 }

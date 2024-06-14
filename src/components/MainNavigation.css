@@ -1,24 +1,25 @@
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* background: linear-gradient(265deg, #272249,#164486); */
-    background: linear-gradient(365deg, #272249 0%, #164486 50%, #000000 100%);
-    width: 100%;    
-    padding: 2rem;
-  }
-  
-  .icon-title {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-  
-  .icon-title > h2 {
-    color: #ffffff;
-    padding-bottom: 3px;
-    /* color: rgb(121, 92, 236); */
-    letter-spacing: 1px;
-    font-size: 23px;
-    font-weight: 800;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(365deg, #272249 0%, #164486 50%, #000000 100%);
+  width: 100%;
+  padding: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.icon-title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.icon-title > h2 {
+  color: #ffffff;
+  padding-bottom: 3px;
+  letter-spacing: 1px;
+  font-size: 23px;
+  font-weight: 800;
+}
