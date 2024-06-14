@@ -1,4 +1,5 @@
 import EdgeInAction from "./EdgeInAction";
+// import Footer from "./Footer";
 import HeroSection from "./HeroSection";
 import HowEdgeWorks from "./HowEdgeWorks";
 import Integrations from "./Integrations";
@@ -21,6 +22,7 @@ function HomePage() {
       <ReadyToLearn />
       <Integrations />
       <EdgeInAction />
+      {/* <Footer /> */}
     </>
   );
 }

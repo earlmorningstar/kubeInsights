@@ -22,10 +22,10 @@
 }
 
 .navlist-dropDown {
-  background-color: #c5c2c2;
+  background-color: #ffffff;
   /* background: linear-gradient(365deg, #272249 0%, #164486 50%, #000000 100%); */
   color: #0973f0;
-  padding: 2.5rem 2rem;
+  padding: 1.5rem 1rem;
   position: fixed;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -104,9 +104,9 @@
 }
 
 .dropdown-content {
-  color: #0a0a1e;
   padding: 20px 10px;
-  background-color: #ffffff;
+  color: #0a0a1e;
+  background-color: #faf9f9;
   border-radius: 4px;
 }
 
@@ -283,7 +283,7 @@
 }
 
 .horizontal-line {
-  border-top: 1px solid #aaa1a1;
+  border-top: 1px solid #5f5f5f;
   width: 100%;
 }
 
@@ -709,6 +709,7 @@
 
 .edgeInAction-parent {
   background: linear-gradient(365deg, #272249 0%, #164486 50%, #000000 100%);
+  color: #ffffff;
   margin: 4rem 9rem;
   display: flex;
   flex-direction: column;
@@ -716,7 +717,6 @@
   text-align: center;
   padding: 3rem 8rem 0 8rem;
   border-radius: 30px;
-  color: #ffffff;
 }
 
 .edgeInAction-parent > h2 {
@@ -814,6 +814,12 @@
     margin: 4rem 3rem;
     padding: 3rem 5rem 0 5rem;
   }
+  .footer-parent {
+    padding: 2.5rem 3rem;
+  }
+  /* .footerLinks-parent {
+    gap: 120px;
+} */
 }
 
 @media screen and (max-width: 910px) {
@@ -948,15 +954,15 @@
   .readyToLearn-parent {
     padding: 4rem 1rem;
   }
-  
+
   .readyToLearn-parent > h2 {
     font-size: 1.8rem;
   }
-   
+
   .readyToLearn-links {
     gap: 50px;
   }
-  
+
   .readyToLearn-links > h2 {
     font-size: 22px;
   }
@@ -964,20 +970,149 @@
   .intergration-parent {
     padding: 4rem 1rem;
   }
-  
+
   .intergration-parent > h2 {
     font-size: 1.8rem;
   }
 
   .edgeInAction-parent {
-    margin: 4rem 1rem;
-    padding: 3rem 5rem 3rem 5rem;
-    
+    margin: 2em 1rem;
+    padding: 3rem 1rem 3rem 1rem;
   }
-  
+
   .edgeInAction-parent > h2 {
     font-size: 1.8rem;
   }
 
-  
+  .navlinks-dropDown-btn > button {
+    font-size: 14px;
+  }
 }
+
+/* Footer Section------- */
+
+.footer-parent {
+  background: linear-gradient(365deg, #272249 0%, #164486 50%, #000000 100%);
+  padding: 2.5rem 9rem;
+}
+
+.footer-title-info > p {
+  color: #9f9fa9;
+  margin-top: 1rem;
+  font-size: 16px;
+}
+
+.sub-btn > input {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border: none;
+  color: #0a0a1e;
+  /* width: 100% !important; */
+  height: 48px;
+  padding: 10px 12px;
+  outline: none;
+}
+
+.sub-btn > button {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #397af6;
+  border: none;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  height: 48px;
+  padding: 10px 12px;
+  transition: box-shadow, background-color 0.3s ease;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.sub-btn > button:hover {
+  background-color: #042a70;
+  box-shadow: 0 4px 8px rgba(4, 134, 221, 0.2),
+    0 6px 20px rgba(14, 44, 126, 0.082);
+}
+
+.sub-parent > p {
+  color: #f1f1f6;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.sub-holder {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.footerLinks-parent {
+    padding: 2.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 80px;
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footerLinks > h3 {
+    font-size:  1rem;
+    line-height: 1.125rem;
+    letter-spacing: .0625rem;
+    font-weight: 500;
+    color: #f1f1f6;
+}
+
+.footerLinks > p {
+    cursor: pointer;
+    font-size: .875rem;
+    line-height: 1.375rem;
+    color: #c9d2d3;
+}
+
+.reservedRrights {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    line-height: 1.375rem;
+    color: #c9d2d3;
+    text-align: center;
+
+}
+
+
+
+/* .stay-connected-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  } */
+  
+  /* .stay-connected-section > div {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 45px;
+  } */
+  
+  /* .sc-icon a {
+    display: inline-block;
+    transition: transform 0.5s ease-in-out;
+  } */
+  
+  /* .rotate-icon {
+    display: inline-block;
+    transition: transform 0.5s ease-in-out;
+  } */
+  
+  /* .sc-icon a:hover .rotate-icon {
+    transform: rotateY(180deg);
+  } */
+
+  /* .sc-icon a:hover .rotate-icon {
+    transform: rotate(180deg);
+  } */
