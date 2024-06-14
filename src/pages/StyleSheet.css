@@ -842,6 +842,11 @@
     padding: 4rem 2rem;
   }
 
+  .Hero-info-parent {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    padding: 3rem 0.5rem;
+  }
+
   .no-hidden-fee-parent {
     padding: 4rem 2rem;
   }
@@ -901,10 +906,6 @@
     font-size: 13px;
   }
 
-  .Hero-info-parent {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    padding: 3rem 0.5rem;
-  }
 
   .Hero-info > h3 {
     font-weight: 600;
