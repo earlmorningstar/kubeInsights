@@ -1,6 +1,6 @@
 import {
   Outlet,
-  // NavLink
+  NavLink
 } from "react-router-dom";
 import { useState } from "react";
 import MainNavigation from "../components/MainNavigation";
@@ -143,7 +143,8 @@ function RootLayout() {
         <div className="navlist">
           <NavHoverContent />
           <div className="navlinks">
-            <span>Log In</span>
+            <NavLink to="/login"><span>Log In</span></NavLink>
+            
             <button>
               Start Free Trial <MdNavigateNext size={17} />
             </button>

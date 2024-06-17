@@ -1,11 +1,11 @@
 import "./StyleSheet.css";
 import "../components/MainNavigation.css";
 import { AiOutlineKubernetes } from "react-icons/ai";
-// import { BsTwitterX } from "react-icons/bs";
-// import { SlSocialInstagram } from "react-icons/sl";
-// import { FaGithub } from "react-icons/fa";
-// import { FaLinkedinIn } from "react-icons/fa";
-// import { TfiEmail } from "react-icons/tfi";
+import { BsTwitterX } from "react-icons/bs";
+import { SlSocialInstagram } from "react-icons/sl";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { TfiEmail } from "react-icons/tfi";
 
 function Footer() {
   return (
@@ -30,6 +30,77 @@ function Footer() {
           </div>
         </div>
       </div>
+
+      <div className="stay-connected-section">
+        <div>
+          <span className="sc-icon">
+            <a
+              href="https://x.com/earlmorningsta1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <BsTwitterX
+                size={25}
+                color="#ffffff"
+                style={{ transform: "rotateX(360deg)" }}
+              />
+            </a>
+          </span>
+          <span className="sc-icon">
+            <a
+              href="https://instagram.com/earlmorningstar"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SlSocialInstagram
+                size={25}
+                color="#ffffff"
+                style={{ transform: "rotateX(360deg)" }}
+              />
+            </a>
+          </span>
+          <span className="sc-icon">
+            <a
+              href="https://github.com/earlmorningstar"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub
+                size={25}
+                color="#ffffff"
+                style={{ transform: "rotateX(360deg)" }}
+              />
+            </a>
+          </span>
+          <span className="sc-icon">
+            <a
+              href="https://linkedin.com/in/joel-onyeabor"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedinIn
+                size={25}
+                color="#ffffff"
+                style={{ transform: "rotateX(360deg)" }}
+              />
+            </a>
+          </span>
+          <span className="sc-icon">
+            <a
+              href="mailto:onyeaborjoel@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <TfiEmail
+                size={25}
+                color="#ffffff"
+                style={{ transform: "rotateX(360deg)" }}
+              />
+            </a>
+          </span>
+        </div>
+      </div>
+
       <div className="horizontal-line"></div>
 
       <div className="footerLinks-parent">
@@ -75,7 +146,7 @@ function Footer() {
 
       <div className="horizontal-line"></div>
 
-      <div className="reservedRrights">
+      <div className="reservedRights">
         ©2024 Joelinton, Inc. (Earl Morningstar). All Rights Reserved
       </div>
     </div>
@@ -83,53 +154,3 @@ function Footer() {
 }
 
 export default Footer;
-
-// {/* <div className="stay-connected-section">
-//       <div>
-//         <span className="sc-icon">
-//           <a
-//             href="https://x.com/earlmorningsta1"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             <BsTwitterX size={25} className="rotate-icon" />
-//           </a>
-//         </span>
-//         <span className="sc-icon">
-//           <a
-//             href="https://instagram.com/earlmorningstar"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             <SlSocialInstagram size={25} className="rotate-icon" />
-//           </a>
-//         </span>
-//         <span className="sc-icon">
-//           <a
-//             href="https://github.com/earlmorningstar"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             <FaGithub size={25} style={{ transform: 'rotate(180deg)' }} className="rotate-icon" />
-//           </a>
-//         </span>
-//         <span className="sc-icon">
-//           <a
-//             href="https://linkedin.com/in/joel-onyeabor"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             <FaLinkedinIn size={25}  className="rotate-icon" />
-//           </a>
-//         </span>
-//         <span className="sc-icon">
-//           <a
-//             href="mailto:onyeaborjoel@gmail.com"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             <TfiEmail size={25} className="rotate-icon" />
-//           </a>
-//         </span>
-//       </div>
-//     </div> */}
