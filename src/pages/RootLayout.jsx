@@ -1,7 +1,4 @@
-import {
-  Outlet,
-  NavLink
-} from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
 import { useState } from "react";
 import MainNavigation from "../components/MainNavigation";
 import "./StyleSheet.css";
@@ -31,6 +28,14 @@ function RootLayout() {
 
   const handleItemClick = (item) => {
     setOpenItem(openItem === item ? null : item);
+  };
+
+  const closeDropdown = () => {
+    setIsClosing(true);
+    setTimeout(() => {
+      setIsDropdownOpen(false);
+      setIsClosing(false);
+    }, 300); // Adjust the timeout duration to match your CSS transition
   };
 
   const dropdownContents = {
@@ -139,16 +144,16 @@ function RootLayout() {
 
   return (
     <>
-      <MainNavigation title="KubeInsights">
+    <MainNavigation title="KubeInsights">
         <div className="navlist">
           <NavHoverContent />
           <div className="navlinks">
-            <NavLink to="/login"><span>Log In</span></NavLink>
-            
-            <button>
-              Start Free Trial <MdNavigateNext size={17} />
+            <button className="login-backBtn" >
+              <NavLink className="loginLink" to="/login">
+                Start Free Trial <MdNavigateNext size={17} />
+              </NavLink>
             </button>
-            <button id="contact-us-btn">
+            <button id="contact-us-btn" >
               Contact Us <MdNavigateNext size={17} />
             </button>
             <div className="hamburger-menu" onClick={toggleDropdown}>
@@ -193,10 +198,12 @@ function RootLayout() {
           <div className="navlinks-dropDown">
             <span>Log In</span>
             <div className="navlinks-dropDown-btn">
-              <button>
-                Start Free Trial <MdNavigateNext size={17} />
+              <button onClick={closeDropdown}>
+                <NavLink className="loginLink" to="/login">
+                  Start Free Trial <MdNavigateNext size={17} />
+                </NavLink>
               </button>
-              <button id="contact-us-btn">
+              <button id="contact-us-btn" onClick={closeDropdown}>
                 Contact Us <MdNavigateNext size={17} />
               </button>
             </div>
@@ -207,6 +214,78 @@ function RootLayout() {
         <Outlet />
       </main>
     </>
+    // <>
+    //   <MainNavigation title="KubeInsights">
+    //     <div className="navlist">
+    //       <NavHoverContent />
+    //       <div className="navlinks">
+    //         <button className="login-backBtn">
+    //           <NavLink className="loginLink" to="/login">
+    //             {" "}
+    //             Start Free Trial <MdNavigateNext size={17} />
+    //           </NavLink>
+    //         </button>
+    //         <button id="contact-us-btn">
+    //           Contact Us <MdNavigateNext size={17} />
+    //         </button>
+    //         <div className="hamburger-menu" onClick={toggleDropdown}>
+    //           {isDropdownOpen ? (
+    //             <RiCloseLargeFill color="#ffffff" size={26} />
+    //           ) : (
+    //             <RxHamburgerMenu color="#ffffff" size={26} />
+    //           )}
+    //         </div>
+    //       </div>
+    //     </div>
+    //   </MainNavigation>
+    //   {isDropdownOpen && (
+    //     <div className={`navlist-dropDown ${isClosing ? "closing" : ""}`}>
+    //       <div className="navlist-dropdown-items">
+    //         {Object.keys(dropdownContents).map((item) => (
+    //           <div
+    //             key={item}
+    //             className="dropdown-item-link"
+    //             onClick={() => handleItemClick(item)}
+    //           >
+    //             <div className="dropdown-item-header">
+    //               <span>{item}</span>
+    //               <GoChevronDown
+    //                 size={25}
+    //                 className={`chevron-icon ${
+    //                   openItem === item ? "rotate" : ""
+    //                 }`}
+    //               />
+    //             </div>
+    //             {openItem === item && (
+    //               <div
+    //                 className="dropdown-content"
+    //                 onClick={(e) => e.stopPropagation()}
+    //               >
+    //                 <p>{dropdownContents[item]}</p>
+    //               </div>
+    //             )}
+    //           </div>
+    //         ))}
+    //       </div>
+    //       <div className="navlinks-dropDown">
+    //         <span>Log In</span>
+    //         <div className="navlinks-dropDown-btn">
+    //           <button>
+    //             <NavLink className="loginLink" to="/login">
+    //               Start Free Trial <MdNavigateNext size={17} />
+    //             </NavLink>
+    //           </button>
+    //           <button id="contact-us-btn">
+    //             Contact Us <MdNavigateNext size={17} />
+    //           </button>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   )}
+    //   <main>
+    //     <Outlet />
+    //   </main>
+    // </>
   );
 }
 
