@@ -3,6 +3,7 @@ import RootLayout from "./pages/RootLayout";
 import ErrorPage from "./pages/ErrorPage";
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
+import TroubleLoggingIn from "./pages/TroubleLoggingIn";
 
 
 
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
     children: [
       {index: true, element: <HomePage />},
       {path: "/login", element: <LoginPage />},
+      {path: '/clientRedirect', element: <TroubleLoggingIn />},
       // {path: "/about", element: <AboutPage />},
       // { path: "/products", element: <ProductsPage /> },
       // { path: "/products/:productId", element: <ProductsDetailPage /> },

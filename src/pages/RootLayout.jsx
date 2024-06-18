@@ -144,16 +144,16 @@ function RootLayout() {
 
   return (
     <>
-    <MainNavigation title="KubeInsights">
+      <MainNavigation title="KubeInsights">
         <div className="navlist">
           <NavHoverContent />
           <div className="navlinks">
-            <button className="login-backBtn" >
+            <button className="login-backBtn">
               <NavLink className="loginLink" to="/login">
                 Start Free Trial <MdNavigateNext size={17} />
               </NavLink>
             </button>
-            <button id="contact-us-btn" >
+            <button id="contact-us-btn">
               Contact Us <MdNavigateNext size={17} />
             </button>
             <div className="hamburger-menu" onClick={toggleDropdown}>
@@ -196,7 +196,7 @@ function RootLayout() {
             ))}
           </div>
           <div className="navlinks-dropDown">
-            <span>Log In</span>
+            {/* <span>Log In</span> */}
             <div className="navlinks-dropDown-btn">
               <button onClick={closeDropdown}>
                 <NavLink className="loginLink" to="/login">
