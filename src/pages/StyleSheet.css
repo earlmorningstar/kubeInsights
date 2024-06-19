@@ -22,8 +22,8 @@
 }
 
 .navlist-dropDown {
-  /* background-color: #ffffff; */
-  background: linear-gradient(365deg, #272249 0%, #164486 50%, #000000 100%);
+  background-color: #ffffff;
+  /* background: linear-gradient(365deg, #272249 0%, #164486 50%, #000000 100%); */
   color: #0973f0;
   padding: 1.5rem 1rem;
   position: fixed;
@@ -992,6 +992,13 @@
   text-transform: uppercase;
 }
 
+.regLink-span{
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  cursor: pointer;
+}
+
 .regLink-span > p {
   font-weight: 500;
   display: flex;
@@ -1106,6 +1113,7 @@
   white-space: normal;
   font-weight: normal;
   color: #f2545b;
+  font-size: 14px;
 }
 
 .fileSelect {
@@ -1168,6 +1176,10 @@
   transition: all 0.15s linear;
   font-size: 12px;
   text-decoration: none;
+}
+
+#loginBackBtn {
+  background-color: #795cec;
 }
 
 /* Media Queries---- */
@@ -1527,3 +1539,8 @@
     margin-left: 4px;
   }
 }
+
+/* .link {
+  color: inherit;
+  text-decoration: none;
+} */

@@ -1,4 +1,5 @@
 import { NavLink, useNavigate } from "react-router-dom";
+import { useState } from "react";
 import { AiOutlineKubernetes } from "react-icons/ai";
 import { RiCodeSSlashFill } from "react-icons/ri";
 import { GiHammerNails } from "react-icons/gi";
@@ -8,16 +9,20 @@ import { FaGithub } from "react-icons/fa";
 import { FaGitlab } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { GoQuestion } from "react-icons/go";
+import { BiArrowBack } from "react-icons/bi";
 import "./StyleSheet.css";
 
 function LoginPage() {
-
+  const [isSignIn, setIsSignIn] = useState(true);
   const navigate = useNavigate();
 
   const handleRedirect = () => {
-    navigate('/clientRedirect'); 
+    navigate("/clientRedirect");
   };
 
+  const toggleSignInSignUp = () => {
+    setIsSignIn(!isSignIn);
+  };
 
   return (
     <>
@@ -57,7 +62,7 @@ function LoginPage() {
         <div className="loginPage-secondSection">
           <div className="secondSection-whiteLayout">
             <p>WELCOME TO KUBEINSIGHTS CLOUD</p>
-            <h2>Sign In</h2>
+            <h2>{isSignIn ? "Sign In" : "Sign Up"}</h2>
             <div className="regLink">
               <span className="regLink-span">
                 <FaDocker color="#0760db" size={25} />
@@ -67,6 +72,7 @@ function LoginPage() {
                 <FaGithub size={25} />
                 <p>GITHUB</p>
               </span>
+
               <span className="regLink-span">
                 <FaGitlab color="#e24329" size={25} />
                 <p>GITLAB</p>
@@ -77,7 +83,11 @@ function LoginPage() {
               </span>
             </div>
             <span className="redirectLink">
-              <p>Don't have an account? Sign Up.</p>
+              <p onClick={toggleSignInSignUp}>
+                {isSignIn
+                  ? "Don't have an account? Sign Up."
+                  : "Already have an account? Sign In."}
+              </p>
               <p onClick={handleRedirect} id="questtionIcon">
                 <GoQuestion size={25} />
                 Trouble logging in?
@@ -92,11 +102,10 @@ function LoginPage() {
             </span>
           </div>
 
-          <div className="login-backBtn">
-            <button className="login-backBtn">
+          <div id="loginBackBtn" className="login-backBtn">
+            <button id="loginBackBtn" className="login-backBtn">
               <NavLink className="loginLink" to="..">
-                {" "}
-                back
+                <BiArrowBack size={60} />
               </NavLink>
             </button>
           </div>

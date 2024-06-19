@@ -39,6 +39,8 @@ function TroubleLoggingIn() {
   const validateIssue = () => {
     if (issue.trim() === "") {
       setIssueError("Please complete this required field.");
+    } else if (issue.trim().length < 25) {
+      setIssueError("The issue description must be at least 25 characters long.");
     } else {
       setIssueError("");
     }
