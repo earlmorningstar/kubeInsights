@@ -1454,6 +1454,7 @@
 
   .demoSchedule-secondSection {
     width: 100%;
+    padding: 38px;
   }
 }
 
@@ -1597,6 +1598,13 @@
   .loginPage-firstSection > h2 {
     font-size: 1.2rem;
   }
+  .demoSchedule-parent {
+    padding: 4rem 2rem;
+    gap: 35px;
+  }
+
+  .demoSchedule-secondSection {
+    padding: 28px;}
 }
 
 @media screen and (max-width: 750px) {
