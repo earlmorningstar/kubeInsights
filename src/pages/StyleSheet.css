@@ -1335,7 +1335,7 @@
 
 .class-form-group > input {
   height: 48px;
-  padding: 10px 12px;
+  padding: 10px 10px;
   border-radius: 12px;
 }
 
@@ -1443,7 +1443,7 @@
   }
 
   .demoSchedule-parent {
-    padding: 4rem 3rem;
+    padding: 4rem 2rem;
     flex-direction: column;
     gap: 50px;
   }
@@ -1599,12 +1599,13 @@
     font-size: 1.2rem;
   }
   .demoSchedule-parent {
-    padding: 4rem 2rem;
+    padding: 4rem 1rem;
     gap: 35px;
   }
 
   .demoSchedule-secondSection {
-    padding: 28px;}
+    padding: 28px 18px;
+  }
 }
 
 @media screen and (max-width: 750px) {
