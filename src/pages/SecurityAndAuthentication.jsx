@@ -1,5 +1,6 @@
 import "./StyleSheet.css";
 import { MdNavigateNext } from "react-icons/md";
+import { NavLink } from "react-router-dom";
 
 function SecurityAndAuthentication() {
   return (
@@ -15,7 +16,9 @@ function SecurityAndAuthentication() {
             limiting, IP allow/deny listing, WAF integration, and fine-grained
             access control.
           </p>
-          <button>Schedule a Demo <MdNavigateNext size={20}/></button>
+          <button> <NavLink to="/demoSchedule" className="demo-link">
+       Schedule a Demo <MdNavigateNext size={20} />
+      </NavLink></button>
         </div>
         <div className="security-image-container">
           <img src="/images/newweb.jpg" alt="web img" />

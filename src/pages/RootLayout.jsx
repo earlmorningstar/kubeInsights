@@ -154,7 +154,13 @@ function RootLayout() {
               </NavLink>
             </button>
             <button id="contact-us-btn">
-              Contact Us <MdNavigateNext size={17} />
+              <NavLink
+                to="/demoSchedule"
+                id="demo-link-id"
+                className="demo-link"
+              >
+                Contact Us <MdNavigateNext size={17} />
+              </NavLink>
             </button>
             <div className="hamburger-menu" onClick={toggleDropdown}>
               {isDropdownOpen ? (
@@ -204,7 +210,13 @@ function RootLayout() {
                 </NavLink>
               </button>
               <button id="contact-us-btn" onClick={closeDropdown}>
-                Contact Us <MdNavigateNext size={17} />
+                <NavLink
+                  to="/demoSchedule"
+                  id="demo-link-id"
+                  className="demo-link"
+                >
+                  Contact Us <MdNavigateNext size={17} />
+                </NavLink>
               </button>
             </div>
           </div>

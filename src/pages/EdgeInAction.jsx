@@ -1,5 +1,6 @@
 import "./StyleSheet.css";
 import { MdNavigateNext } from "react-icons/md";
+import { NavLink } from "react-router-dom";
 
 function EdgeInAction() {
   return (
@@ -12,7 +13,9 @@ function EdgeInAction() {
       </p>
       <div  id="edgeInAction-btn" className="Hero-btn">
         <button>
-          Schedule a Demo <MdNavigateNext size={17} />
+        <NavLink to="/demoSchedule" className="demo-link">
+       Schedule a Demo <MdNavigateNext size={17} />
+      </NavLink>
         </button>
         <button id="transparent-hero-btn">
           See Pricing Plans <MdNavigateNext size={17} />

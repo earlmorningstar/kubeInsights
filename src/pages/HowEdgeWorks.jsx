@@ -1,5 +1,6 @@
 import "./StyleSheet.css";
 import { MdNavigateNext } from "react-icons/md";
+import { NavLink } from "react-router-dom";
 
 function HowEdgeWorks() {
   return (
@@ -52,7 +53,9 @@ function HowEdgeWorks() {
             <li>Progressive delivery and continuous delivery support</li>
           </ul>
           <button>
-            Schedule a Demo <MdNavigateNext size={20} />
+          <NavLink to="/demoSchedule" className="demo-link">
+       Schedule a Demo <MdNavigateNext size={20} />
+      </NavLink>
           </button>
         </div>
         <div className="security-image-container">

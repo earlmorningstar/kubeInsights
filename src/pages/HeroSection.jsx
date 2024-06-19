@@ -2,6 +2,7 @@ import { MdNavigateNext } from "react-icons/md";
 import { TbPlugConnectedX } from "react-icons/tb";
 import { FaExpeditedssl } from "react-icons/fa6";
 import { RiSettings2Line } from "react-icons/ri";
+import { NavLink } from "react-router-dom";
 
 import "./StyleSheet.css";
 
@@ -16,7 +17,9 @@ function HeroSection() {
         </p>
         <div className="Hero-btn">
           <button>
-            Schedule a Demo <MdNavigateNext size={17} />
+            <NavLink to="/demoSchedule" className="demo-link">
+              Schedule a Demo <MdNavigateNext size={17} />
+            </NavLink>
           </button>
           <button id="transparent-hero-btn">
             See Pricing Plans <MdNavigateNext size={17} />
@@ -24,7 +27,11 @@ function HeroSection() {
         </div>
         <div className="Hero-info-parent">
           <span className="Hero-info">
-            <TbPlugConnectedX className="Hero-icon" size={50} color="rgb(170, 153, 236)" />
+            <TbPlugConnectedX
+              className="Hero-icon"
+              size={50}
+              color="rgb(170, 153, 236)"
+            />
             <h3>Accelerate Scalability</h3>
             <p>
               Manage high traffic volumes and distribute incoming requests
@@ -33,7 +40,11 @@ function HeroSection() {
             </p>
           </span>
           <span className="Hero-info">
-            <FaExpeditedssl className="Hero-icon" size={50} color="rgb(170, 153, 236)" />
+            <FaExpeditedssl
+              className="Hero-icon"
+              size={50}
+              color="rgb(170, 153, 236)"
+            />
             <h3>Enhanced Security</h3>
             <p>
               Protect your APIs from unauthorized access and malicious attacks
@@ -42,7 +53,11 @@ function HeroSection() {
             </p>
           </span>
           <span className="Hero-info">
-            <RiSettings2Line className="Hero-icon" size={50} color="rgb(170, 153, 236)"/>
+            <RiSettings2Line
+              className="Hero-icon"
+              size={50}
+              color="rgb(170, 153, 236)"
+            />
             <h3>Improve Productivity & Developer Experience</h3>
             <p>
               Streamline productivity through self-service options to leverage
