@@ -1,11 +1,24 @@
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { NavLink, useParams, useNavigate } from "react-router-dom";
 import "./StyleSheet.css";
 import { GiCheckMark } from "react-icons/gi";
 import { MdNavigateNext } from "react-icons/md";
 
 function PricingPlans() {
-  const [selectedPlan, setSelectedPlan] = useState("Edge Stack");
+  const { plan } = useParams();
+  const navigate = useNavigate();
+  const [selectedPlan, setSelectedPlan] = useState(plan || "Edge Stack");
+
+  useEffect(() => {
+    if (plan) {
+      setSelectedPlan(plan);
+    }
+  }, [plan]);
+
+  const handlePlanChange = (planName) => {
+    setSelectedPlan(planName);
+    navigate(`/pricingPlans/${planName}`);
+  };
 
   const edgeStackDetails = (
     <>
@@ -277,13 +290,13 @@ function PricingPlans() {
       <span className="pricingBtn">
         <button
           className={selectedPlan === "Edge Stack" ? "active" : ""}
-          onClick={() => setSelectedPlan("Edge Stack")}
+          onClick={() => handlePlanChange("Edge Stack")}
         >
           Edge Stack
         </button>
         <button
           className={selectedPlan === "Telepresence" ? "active" : ""}
-          onClick={() => setSelectedPlan("Telepresence")}
+          onClick={() => handlePlanChange("Telepresence")}
         >
           Telepresence
         </button>

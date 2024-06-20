@@ -1776,6 +1776,10 @@
   .demoSchedule-secondSection {
     padding: 28px 18px;
   }
+
+  .pricingPlan-parent {
+    padding: 4rem 1rem;
+  }
 }
 
 @media screen and (max-width: 750px) {

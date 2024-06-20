@@ -23,3 +23,17 @@
   font-size: 23px;
   font-weight: 800;
 }
+
+.icon-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  gap: 3px;
+}
+
+@media screen and (max-width: 750px){
+  .navbar{
+    padding: 2rem 1rem;
+  }
+}

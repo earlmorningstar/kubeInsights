@@ -21,7 +21,7 @@ const router = createBrowserRouter([
       {path: "/login", element: <LoginPage />},
       {path: '/clientRedirect', element: <TroubleLoggingIn />},
       {path: '/demoSchedule', element: <DemoSchedule />},
-      {path: '/pricingPlans', element: <PricingPlans />},
+      { path: "/pricingPlans/:plan?", element: <PricingPlans /> },
       {path: '/edgeStackGrowth', element: <EdgeStackGrowthPlan />},
       {path: '/telepresenceEnterprisePlan', element: <TelepresenceEnterprisePlan />},
     ],
