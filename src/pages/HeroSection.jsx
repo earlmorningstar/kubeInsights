@@ -22,7 +22,10 @@ function HeroSection() {
             </NavLink>
           </button>
           <button id="transparent-hero-btn">
-            See Pricing Plans <MdNavigateNext size={17} />
+            <NavLink to="/pricingPlans" className="demo-link">
+              See Pricing Plans <MdNavigateNext size={17} />
+            </NavLink>
+            
           </button>
         </div>
         <div className="Hero-info-parent">

@@ -5,6 +5,9 @@ import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
 import TroubleLoggingIn from "./pages/TroubleLoggingIn";
 import DemoSchedule from "./pages/DemoSchedule";
+import PricingPlans from "./pages/PricingPlans";
+import EdgeStackGrowthPlan from "./pages/EdgeStackGrowthPlan";
+import TelepresenceEnterprisePlan from "./pages/TelepresenceEnterprisePlan";
 
 
 
@@ -18,9 +21,9 @@ const router = createBrowserRouter([
       {path: "/login", element: <LoginPage />},
       {path: '/clientRedirect', element: <TroubleLoggingIn />},
       {path: '/demoSchedule', element: <DemoSchedule />},
-      // {path: "/about", element: <AboutPage />},
-      // { path: "/products", element: <ProductsPage /> },
-      // { path: "/products/:productId", element: <ProductsDetailPage /> },
+      {path: '/pricingPlans', element: <PricingPlans />},
+      {path: '/edgeStackGrowth', element: <EdgeStackGrowthPlan />},
+      {path: '/telepresenceEnterprisePlan', element: <TelepresenceEnterprisePlan />},
     ],
   },
 ]);

@@ -18,8 +18,10 @@ function EdgeInAction() {
       </NavLink>
         </button>
         <button id="transparent-hero-btn">
-          See Pricing Plans <MdNavigateNext size={17} />
-        </button>
+            <NavLink to="/pricingPlans" className="demo-link">
+              See Pricing Plans <MdNavigateNext size={17} />
+            </NavLink>
+          </button>
       </div>
     </div>
   );
