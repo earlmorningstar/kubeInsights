@@ -1,5 +1,6 @@
 import "./StyleSheet.css";
 import { MdNavigateNext } from "react-icons/md";
+import { NavLink } from "react-router-dom";
 
 function ReadyToLearn() {
   return (
@@ -10,13 +11,17 @@ function ReadyToLearn() {
           <div className="readyToLearn-links">
             <h2>Edge Stack Solution Brief</h2>
             <span>
-              Download Solution Brief <MdNavigateNext size={18}/>
+              <NavLink to="/solutionBrief" className="ready-demo-link">
+                Download Solution Brief <MdNavigateNext size={18} />
+              </NavLink>
             </span>
           </div>
           <div id="blue-border" className="readyToLearn-links">
             <h2>Edge Stack API Gateway Pricing</h2>
             <span>
-              Edge Stack Pricing <MdNavigateNext size={18}/>
+              <NavLink to="/pricingPlans" className="ready-demo-link">
+                Edge Stack Pricing <MdNavigateNext size={18} />
+              </NavLink>
             </span>
           </div>
         </div>

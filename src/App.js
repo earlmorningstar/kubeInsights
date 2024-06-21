@@ -8,6 +8,7 @@ import DemoSchedule from "./pages/DemoSchedule";
 import PricingPlans from "./pages/PricingPlans";
 import EdgeStackGrowthPlan from "./pages/EdgeStackGrowthPlan";
 import TelepresenceEnterprisePlan from "./pages/TelepresenceEnterprisePlan";
+import SolutionBrief from "./pages/SolutionBrief";
 
 
 
@@ -18,12 +19,13 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {index: true, element: <HomePage />},
-      {path: "/login", element: <LoginPage />},
+      {path: '/login', element: <LoginPage />},
       {path: '/clientRedirect', element: <TroubleLoggingIn />},
       {path: '/demoSchedule', element: <DemoSchedule />},
-      { path: "/pricingPlans/:plan?", element: <PricingPlans /> },
+      {path: '/pricingPlans/:plan?', element: <PricingPlans /> },
       {path: '/edgeStackGrowth', element: <EdgeStackGrowthPlan />},
       {path: '/telepresenceEnterprisePlan', element: <TelepresenceEnterprisePlan />},
+      {path: '/solutionBrief', element: <SolutionBrief />},
     ],
   },
 ]);
