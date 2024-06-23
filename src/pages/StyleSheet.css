@@ -590,7 +590,7 @@
 /* How Edge Works Section---- */
 
 .edge-works-parent {
-  padding: 4rem 9rem;
+  padding: 2rem 9rem;
 }
 
 .edge-works-parent > h2 {
@@ -1754,7 +1754,7 @@
     width: 100%;
   }
   .edge-works-parent {
-    padding: 4rem 3rem;
+    padding: 2rem 3rem;
   }
   .edgeInAction-parent {
     margin: 4rem 3rem;
@@ -1803,6 +1803,14 @@
     padding: 2rem 1rem;
     gap: 40px;
     height: 38vh;
+  }
+
+  .solutionBrief-holder > p {
+    font-size: 1.5rem;
+  }
+  
+  .solutionBrief-holder > h1 {
+    font-size: 3.8rem;
   }
 }
 
@@ -1869,7 +1877,7 @@
     padding: 4rem 2rem;
   }
   .edge-works-parent {
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
   }
   .readyToLearn-parent > div {
     flex-direction: column;
@@ -1982,7 +1990,7 @@
   }
 
   .edge-works-parent {
-    padding: 4rem 1rem;
+    padding: 2rem 1rem;
   }
 
   .edge-works-parent > h2 {
