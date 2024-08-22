@@ -1,8 +1,7 @@
-import { Outlet, NavLink } from "react-router-dom";
-import { useState } from "react";
+import { Outlet, NavLink, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 import MainNavigation from "../components/MainNavigation";
 import "./StyleSheet.css";
-
 import { MdNavigateNext } from "react-icons/md";
 import { GoChevronDown } from "react-icons/go";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -13,6 +12,11 @@ function RootLayout() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
   const [openItem, setOpenItem] = useState(null);
+  const pathname = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   const toggleDropdown = () => {
     if (isDropdownOpen) {
