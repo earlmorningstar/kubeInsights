@@ -22,9 +22,9 @@ function Integrations() {
             Edge Stack, allowing users to monitor the health and performance of
             their ingress and services, and set up alerts for any anomalies.
           </p>
-          <span className="intergration-links">
+          {/* <span className="intergration-links">
             See all Integrations <MdNavigateNext size={18} />
-          </span>
+          </span> */}
         </span>
         <span>
           <SiNewrelic size={50} color="rgb(28, 231, 131)"/>
@@ -34,9 +34,9 @@ function Integrations() {
             Edge Stack, allowing users to monitor the health and performance of
             their ingress and services, and set up alerts for any anomalies.
           </p>
-          <span className="intergration-links">
+          {/* <span className="intergration-links">
             See all Integrations <MdNavigateNext size={18} />
-          </span>
+          </span> */}
         </span>
         <span>
           <SiDatadog size={50} color="rgb(98, 45, 164)"/>
@@ -46,9 +46,9 @@ function Integrations() {
             Edge Stack, allowing users to monitor the health and performance of
             their ingress and services, and set up alerts for any anomalies.
           </p>
-          <span className="intergration-links">
+          {/* <span className="intergration-links">
             See all Integrations <MdNavigateNext size={18} />
-          </span>
+          </span> */}
         </span>
         <span>
           <IoChevronForwardSharp size={50} color="rgb(100, 166, 55)"/>
