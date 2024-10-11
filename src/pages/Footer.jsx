@@ -26,7 +26,7 @@ function Footer() {
 
           <div className="sub-btn">
             <input type="text" placeholder="Email Address here" />
-            <button>Suscribe</button>
+            <button>Subscribe</button>
           </div>
         </div>
       </div>
