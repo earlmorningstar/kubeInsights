@@ -15,43 +15,34 @@ function Integrations() {
       </p>
       <div className="intergration-info-holder">
         <span>
-          <SiPrometheus size={50} color="rgb(230, 82, 44)"/>
+          <SiPrometheus size={50} color="rgb(230, 82, 44)" />
           <h2>Prometheus</h2>
           <p className="integration-note">
             A popular monitoring solution, Prometheus can scrape metrics from
             Edge Stack, allowing users to monitor the health and performance of
             their ingress and services, and set up alerts for any anomalies.
           </p>
-          {/* <span className="intergration-links">
-            See all Integrations <MdNavigateNext size={18} />
-          </span> */}
         </span>
         <span>
-          <SiNewrelic size={50} color="rgb(28, 231, 131)"/>
+          <SiNewrelic size={50} color="rgb(28, 231, 131)" />
           <h2>New Relic</h2>
           <p className="integration-note">
             A popular monitoring solution, Prometheus can scrape metrics from
             Edge Stack, allowing users to monitor the health and performance of
             their ingress and services, and set up alerts for any anomalies.
           </p>
-          {/* <span className="intergration-links">
-            See all Integrations <MdNavigateNext size={18} />
-          </span> */}
         </span>
         <span>
-          <SiDatadog size={50} color="rgb(98, 45, 164)"/>
+          <SiDatadog size={50} color="rgb(98, 45, 164)" />
           <h2>DataDog</h2>
           <p className="integration-note">
             A popular monitoring solution, Prometheus can scrape metrics from
             Edge Stack, allowing users to monitor the health and performance of
             their ingress and services, and set up alerts for any anomalies.
           </p>
-          {/* <span className="intergration-links">
-            See all Integrations <MdNavigateNext size={18} />
-          </span> */}
         </span>
         <span>
-          <IoChevronForwardSharp size={50} color="rgb(100, 166, 55)"/>
+          <IoChevronForwardSharp size={50} color="rgb(100, 166, 55)" />
           <h2>Splunk</h2>
           <p className="integration-note">
             A popular monitoring solution, Prometheus can scrape metrics from

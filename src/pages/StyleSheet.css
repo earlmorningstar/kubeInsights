@@ -23,7 +23,6 @@
 
 .navlist-dropDown {
   background-color: #ffffff;
-  /* background: linear-gradient(365deg, #272249 0%, #164486 50%, #000000 100%); */
   color: #0973f0;
   padding: 1.5rem 1rem;
   position: fixed;
@@ -387,7 +386,6 @@
 }
 
 .Hero-info-parent {
-  /* background: radial-gradient(circle, rgba(218, 218, 218, 0.075) 0%, transparent 100%); */
   background: linear-gradient(365deg, #272249 0%, #164486 50%, #000000 100%);
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -993,9 +991,6 @@
 }
 
 .regLink-span {
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
   cursor: pointer;
 }
 
@@ -1808,7 +1803,7 @@
   .solutionBrief-holder > p {
     font-size: 1.5rem;
   }
-  
+
   .solutionBrief-holder > h1 {
     font-size: 3.8rem;
   }

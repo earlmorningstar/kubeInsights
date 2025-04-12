@@ -75,11 +75,6 @@ function SolutionBrief() {
           landscape often confront bottlenecks. The hurdles? Organizations and
           tools that are yet to evolve and align with the revamped life cycle.
         </p>
-        {/* <div className="solutionBrief-image-container">
-          {images.map((image, index) => (
-            <img key={index} src={image.src} alt={image.alt} />
-          ))}
-        </div> */}
         <ImagesComponent src={images[0].src} alt={images[0].alt} />
         <p>
           Adopting cloud-native development best practices is step one in

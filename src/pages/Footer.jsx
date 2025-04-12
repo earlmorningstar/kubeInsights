@@ -147,7 +147,7 @@ function Footer() {
       <div className="horizontal-line"></div>
 
       <div className="reservedRights">
-        ©2024 Joelinton, Inc. (Earl Morningstar). All Rights Reserved
+        ©2025 Joelinton, Inc. (Earl Morningstar). All Rights Reserved
       </div>
     </div>
   );
